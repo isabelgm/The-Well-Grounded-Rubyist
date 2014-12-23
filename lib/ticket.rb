@@ -1,7 +1,7 @@
 class Ticket
 
   attr_reader :venue, :date
-  attr_accessor :price 
+  attr :price, true
 
   def initialize(venue, date)
     @venue = venue
