@@ -1,4 +1,5 @@
 #This illustrates "Inheritance"
+#Ruby classes can only inherit from one superclass - single inheritance
 
 class Publication
   attr_accessor :publisher
@@ -25,3 +26,11 @@ end
 
 david = Rubyist.new
 puts david.species
+
+#example of Class.new with a block
+c = Class.new do 
+  def say_hello
+    puts "Hello!"
+  end
+end
+#if an instance of the class (with c.new), you'll be able to call the method say_hello on that instance
