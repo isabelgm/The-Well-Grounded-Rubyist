@@ -1,0 +1,33 @@
+"Or-Equals" and other shortcut operators
+
+array ||= []
+shorthand way for
+if array has a boolean value of true (if neither false or nil) then don't do anything, but if it doesn't initialize it to a new array. 
+
+array || array = []
+
+"And-Equals"
+&&= (rarely used)
+
+"Plus-Equals"
++=
+a += 1 means a = a + 1
+
+- =
+
+* = 
+
+/=
+
+**= (raise to a power)
+
+&= (bitwise AND)
+
+|= (bitwise OR)
+
+^= (bitwise EXCLUSIVE OR)
+
+%= modulo
+
+
+You can use x += y on an instance of class (x)... This is syntactic sugar for x = x. + (y)
