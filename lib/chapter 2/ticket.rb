@@ -26,3 +26,14 @@ cc.price = 10.00
 fg.price = 18.00
 highest = Ticket.most_expensive(th,cc,fg)
 puts "The highest-priced ticket is the one for #{highest.venue}."
+
+puts "Testing the response of a ticket instance... "
+wrong = fg.most_expensive
+
+
+# Remember: 
+#   1. Classes are objects.
+#   2. Instances of classes are objects too
+#   3. A class object (like Ticket) has its own methods, its own state, its own identity. 
+#      It doesn't share these things with instances of itself. 
+#      Sending a message to Ticket isn't the same thing as sending a message to fg or cc or any other instance ticket. 
