@@ -35,3 +35,5 @@ c.m
 c.n
 
 puts "Top level: a = #{a}"
+
+t
