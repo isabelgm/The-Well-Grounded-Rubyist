@@ -69,3 +69,20 @@ n = 1
 n = n + 1 until n == 10
 puts "We've reached 10!"
 # In place of the until statement, you could also use while n < 10
+
+#  Looping based on a list of values
+# Let’s say you want to print a chart of Fahrenheit equivalents of Celsius values. You can
+# do this by putting the Celsius values in an array and then looping through the array
+# using the for/in keyword pair. The loop runs once for each value in the array; each
+# time through, that value is assigned to a variable you specify:
+
+celsius = [0, 10, 20, 30, 40, 50, 60, 70 80, 90, 100]
+puts "Celsius\tFahrenheit"
+for c in celsius 
+  puts "c\t#{Temperature.c2f(c)}"
+end
+
+# The body of the loop (the puts statement) runs 11 times. The first time through, the
+# value of c is 0. The second time, c is 10; the third time, it’s 20; and so forth.
+# for is a powerful tool. Oddly enough, though, on closer inspection it turns out
+# that for is just an alternate way of doing something even more powerful…. 
